@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomUICustomClassUsignIPOutletAndIPAction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-ba-32v">
+                                <rect key="frame" x="20" y="89" width="353" height="85.333333333333314"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="H4T-Pl-QPQ">
+                                <rect key="frame" x="20" y="204.33333333333334" width="353" height="286.33333333333326"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CzR-gq-bJA" customClass="CustomTextField" customModule="CustomUICustomClassUsignIPOutletAndIPAction" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="59.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ynj-fU-zRM" customClass="CustomTextField" customModule="CustomUICustomClassUsignIPOutletAndIPAction" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75.666666666666657" width="353" height="59.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-9e-IEY" customClass="CustomTextField" customModule="CustomUICustomClassUsignIPOutletAndIPAction" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150.99999999999997" width="353" height="59.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1tk-Ht-aFe" customClass="CustomTextField" customModule="CustomUICustomClassUsignIPOutletAndIPAction" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="226.66666666666666" width="353" height="59.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaX-pV-XB0">
+                                <rect key="frame" x="20" y="672.66666666666663" width="353" height="85.333333333333371"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNM-Az-xe7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cD0-ba-32v" secondAttribute="trailing" constant="20" id="2Bq-GF-Bzp"/>
+                            <constraint firstItem="CzR-gq-bJA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="4aA-59-1Mt"/>
+                            <constraint firstItem="H4T-Pl-QPQ" firstAttribute="top" secondItem="cD0-ba-32v" secondAttribute="bottom" constant="30" id="BFA-FF-cAy"/>
+                            <constraint firstItem="cD0-ba-32v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iwu-75-sfg"/>
+                            <constraint firstItem="FaX-pV-XB0" firstAttribute="leading" secondItem="cD0-ba-32v" secondAttribute="leading" id="h2Z-CY-6YY"/>
+                            <constraint firstItem="H4T-Pl-QPQ" firstAttribute="leading" secondItem="cD0-ba-32v" secondAttribute="leading" id="hnq-Sd-Z92"/>
+                            <constraint firstItem="FaX-pV-XB0" firstAttribute="height" secondItem="cD0-ba-32v" secondAttribute="height" id="j8L-X3-GVe"/>
+                            <constraint firstItem="FaX-pV-XB0" firstAttribute="trailing" secondItem="cD0-ba-32v" secondAttribute="trailing" id="lmN-l1-1vv"/>
+                            <constraint firstItem="H4T-Pl-QPQ" firstAttribute="trailing" secondItem="cD0-ba-32v" secondAttribute="trailing" id="ovL-k9-qT5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FaX-pV-XB0" secondAttribute="bottom" constant="60" id="rcs-cC-hlT"/>
+                            <constraint firstItem="cD0-ba-32v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="tj5-SP-2y3"/>
+                            <constraint firstItem="cD0-ba-32v" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="zoA-Pd-UC9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="WelcomeLabel" destination="cD0-ba-32v" id="1hv-4n-THX"/>
+                        <outlet property="confirmPasswordTextField" destination="1tk-Ht-aFe" id="Yp8-Xy-XUC"/>
+                        <outlet property="emailTextField" destination="CzR-gq-bJA" id="hrH-Tc-bRE"/>
+                        <outlet property="passwordTextField" destination="t5a-9e-IEY" id="CwI-fW-2yE"/>
+                        <outlet property="phoneTextField" destination="Ynj-fU-zRM" id="0BI-Fu-t9Z"/>
+                        <outlet property="signUpButton" destination="FaX-pV-XB0" id="olC-he-DWE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="-155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
