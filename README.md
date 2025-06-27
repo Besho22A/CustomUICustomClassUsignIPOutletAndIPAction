@@ -28,8 +28,7 @@ Understand how to:
 
 ## 📸 Screenshots
 
- iPhone 15 
- <img src="Screenshot.png" width="200"/> 
+| <img src="Screenshot.png" width="200"/> | <img src="Screenshot2.png" width="200"/> |
 
 ---
 
